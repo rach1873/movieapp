@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Oswald:wght@300&family=Poppins:wght@100&family=Rajdhani&display=swap');
+
+:root{
+    --green :  #82E0AA;
+    --orange: #F8C471;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    
+    
+}
+
+body {
+    background-color: #2E86C1 ;
+    width: 100vw;
+    height: 100vh;
+    min-width: 70vw;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.5rem;
+    overflow-x: hidden;
+    background-image: url('greenplanet.jpg');
+    
+    
+    
+    
+}
+
+.movie-title {
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    font-size: 70px;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.hamburger-menu {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    font-size: 40px;
+    cursor: pointer;
+    
+}
+
+.toggle-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 40px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.alternate-background-color {
+
+    background-color: gray ;
+}
+
+
+.bi-toggle-on {
+    background-color: gray;
+}
+
+
+
+.hidden {
+    visibility: hidden;
+}
+
+/* .menu-container {
+    width: 10%;
+    height: 56vh;
+    position: absolute;
+    left: 0;
+    top: 50px; */
+    /* background-color: rgba(204, 209, 209,0.1); */
+    /* border-radius: 5px;
+    font-size: 2vw;
+
+    
+} */
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 2vw;
+    
+}
+
+a {
+    display: inline-block;
+}
+
+.menu-container > a {
+    margin-bottom: 3vh;
+    cursor: pointer;
+   
+   
+}
+
+
+
+.menu-container > a:hover {
+    /* text-decoration: underline; */
+    transform: scale(1.25);
+    background-color: var(--green);
+    border-radius: 5px;
+    
+}
+
+.movies {
+
+    height: 100vh;
+    margin-top: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+
+    
+
+}
+
+.movie-genre {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5px;
+    transform: translateX(0);
+    transition: all 2.5s ease-in-out;
+   
+}
+
+.genre{
+    text-decoration: underline; 
+}
+
+.movie-genre > img {
+    cursor: pointer;
+
+    
+    
+    
+}
+
+img {
+    border-radius: 5px;
+}
+
+img:hover {
+    filter: brightness(120%);
+    transform: scale(1.2);
+    transition: all 1.2s ease-in-out;
+}
+
+.arrows {
+    float: right;
+}
+
+span > i {
+    color: var(--orange);
+    cursor: pointer;
+    
+}
+
+.row {
+    font-size: 40px;
+}
+
+.poster-title {
+    text-align: center;
+}
+
+
+
+
+/* 
+@media only screen and (max-height: 800px) {
+    .menu-container {
+      font-size: 3vh;
+    }
+  } */
